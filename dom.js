@@ -23,18 +23,30 @@
 //header.style.borderBottom='solid 3px blue';
 
 
-var title=document.getElementsByClassName('title');
+// var title=document.getElementsByClassName('title');
 
-title[0].style.fontWeight = 'bold';
+// title[0].style.fontWeight = 'bold';
 
-title[0].style.color="green";
+// title[0].style.color="green";
 
-var item=document.getElementsByClassName("list-group-item");
-item[2].style.backgroundColor='green';
+// var item=document.getElementsByClassName("list-group-item");
+// item[2].style.backgroundColor='green';
 
-for(let i=0 ; i<item.length ; i++){
-    item[i].style.fontWeight='bold';
-    item[i].style.color='blue';
+// for(let i=0 ; i<item.length ; i++){
+//     item[i].style.fontWeight='bold';
+//     item[i].style.color='blue';
+// }
+
+//GET ELEMENT BY TAG NAME
+
+var li=document.getElementsByTagName('li');
+
+for(let i=0 ; i<li.length ; i++){
+    li[i].style.backgroundColor='lightgrey';
 }
+
+
+
+
 
 
