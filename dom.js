@@ -73,18 +73,48 @@
 //     item[i].style.backgroundColor='lightgrey';
 // }
 
-var items=document.querySelectorAll('.list-group-item');
-items[1].style.backgroundColor='green';
+// var items=document.querySelectorAll('.list-group-item');
+// items[1].style.backgroundColor='green';
 
-items[2].style.visibility='hidden';
+// items[2].style.visibility='hidden';
 
-items[1].style.color='yellow';
+// items[1].style.color='yellow';
 
-var odd=document.querySelectorAll('li:nth-child(odd)');
-for(let i=0 ; i<odd.length ; i++){
-    odd[i].style.backgroundColor='lightgreen';
-}
+// var odd=document.querySelectorAll('li:nth-child(odd)');
+// for(let i=0 ; i<odd.length ; i++){
+//     odd[i].style.backgroundColor='lightgreen';
+// }
 
 
+var itemList=document.querySelector('#items');
+console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor='yellow';
+
+
+var newDiv=document.createElement('div');
+
+newDiv.setAttribute('class' , 'container');
+newDiv.setAttribute('style' , 'background-color:blue');
+
+newDiv.textContent="hello world";
+
+var container=document.querySelector('.container');
+var h1=document.querySelector('#header-title');
+
+container.insertBefore(newDiv,h1);
+
+console.log(newDiv);
+
+var newElement=document.createElement('li');
+newElement.className='list-group-item';
+newElement.style.fontWeight='bold';
+newElement.style.color='orange';
+newElement.style.fontFamily='sans-serif';
+newElement.textContent='HELLO';
+
+var ul=document.querySelector('#items');
+var list=document.querySelector('.list-group-item');
+
+ul.insertBefore(newElement , list);
 
 
